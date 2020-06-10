@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Messing things up</title> 
+        <style>
+            body {
+                text-align: center;
+            }
+
+            body > div, a, img {
+                margin: 20px;
+            }
+
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .flex div {
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+            }
+
+            .flex > .flex-child {
+                background-color: lightcoral;
+            }
+
+            .flex > .flex-grandchild {
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="back-to-top">Responsive design</h1>
+
+        <div class="flex">
+            <div class="flex-child">I am a child!</div>
+            <div class="flex-child">I am a child!</div>
+            <div class="flex-child">I am a child!</div>
+            <div class="flex-child">I am a child!</div>
+
+            <div class="flex-grandchild">I am a grandchild!</div>
+            <div class="flex-grandchild">I am a grandchild!</div>
+            <div class="flex-grandchild">I am a grandchild!</div>
+            <div class="flex-grandchild">I am a grandchild!</div>
+
+            <div class="flex-child">I am a child!</div>
+            <div class="flex-child">I am a child!</div>
+            <div class="flex-child">I am a child!</div>
+            <div class="flex-child">I am a child!</div>
+        </div>
+
+        <div>
+            <p style="text-decoration: underline;">Radio</p>
+            <input name="color" type="radio" value="coral"> coral
+            <input name="color" type="radio" value="blue"> blue
+            <p style="text-decoration: underline;">Text vs password</p>
+            <input name="color" type="text" placeholder="color">
+            <input name="color" type="password" placeholder="color">
+            <p style="text-decoration: underline;">List</p>
+            <input name="color" list="colorlist" placeholder="color">
+            <datalist id="colorlist">
+                <option>coral</option>
+                <option>blue</option>
+            </datalist>
+        </div>
+
+        <a href=#back-to-top>Back to top!</a>
+        <p></p>
+        <img src="../lecture0/staff_pic.jpg" width="200px">
+    </body>
+</html>
